@@ -18,22 +18,6 @@ def remove_product(products, prices, product_to_remove):
 
 
 
-# def get_most_valuable(products, prices, count):
-#     resoult = []
-
-#     product_copy = products[:]
-#     price_copy = prices[:]
-
-#     for time in range(count):
-#         for i in price_copy:
-#             for j in product_copy:
-#                 if i == max(price_copy):
-#                     resoult.append((j,i))
-#                     price_copy.remove(i)
-#                     product_copy.remove(j)
-
-
-
 def get_most_valuable(products, prices, count):
     result = []
 
@@ -48,7 +32,6 @@ def get_most_valuable(products, prices, count):
 
         price_copy.pop(index)
         product_copy.pop(index)
-
     return result
 
 
